@@ -5,38 +5,67 @@
 }
 
 body {
+    height: 100vh;
     display: flex;
+    align-items: center;
     justify-content: center;
+    background-color: #707070af;
 }
 
-
-h1 {
+h1, h2{
     text-align: center;
+    background-color: #4e4e4e;
 }
 
 section {
-    width: 50%;
+    width: 30%;
+    align-items: center;
+    border: solid 2px rgb(63, 63, 63);
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .juego {
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 button {
-    width: 33%;
-    height: 30vh;
+    box-sizing: border-box;
+    padding: 45%;
+    border: solid 2px rgb(63, 63, 63);
+    background-color: gray;
 }
 
-
 .rojo {
-    width: 33%;
-    height: 30vh;
-    background-color: red;
+    background-color: #f8312f;
 }
 
 .azul {
-    width: 33%;
-    height: 30vh;
-    background-color: blue;
+    background-color: #00a6ed;
+}
+
+#izquierda {
+    border-radius: 0px 0px 0px 14px;
+}
+
+#derecha {
+    border-radius: 0px 0px 14px 0px;
+}
+
+#arriba {
+    border-top: solid 4px rgb(63, 63, 63);
+}
+
+.titulorojo {
+    color: #f8312f;
+}
+
+.tituloazul {
+    color: #00a6ed;  
+}
+
+.titulogris {
+    color: rgb(124, 124, 124);
 }
